@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"thong-khon-api/config"
+)
 
 func main() {
-	fmt.Println("Hello Kuyyy")
+	config.LoadEnvVariables()
+	config.ConnectDB()
 }
